@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  color: darkblue;
+  background-color: lightblue;
+}
+
+.AffichageCentral{
+  display: inline-block;
 }
 
 .App-logo {
@@ -35,4 +41,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+#rechercherVille {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }

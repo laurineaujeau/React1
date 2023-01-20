@@ -1,0 +1,29 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+  
+    <script type="text/babel">
+      function App() {
+        // ajouter une fonction handleSubmit qui aura comme argument event
+        // dans cette fonction, appeler d'abord event.preventDefault() pour éviter de rafraichir la page
+        // récupérer la valeur de la manière suivante : event.target.elements[0].value
+        // utiliser alert pour afficher la valeur
+        // appeler la méthode dans <form>
+  
+        return (
+          <form>
+            <div>
+              <label>Username:</label>
+              <input type="text" />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        );
+      }
+  
+      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
+  </body>
+  
